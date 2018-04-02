@@ -7,73 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6A93FA52072219000E8C33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A93FA42072219000E8C33A /* AppDelegate.swift */; };
-		D6A93FA72072219000E8C33A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A93FA62072219000E8C33A /* ViewController.swift */; };
-		D6A93FAA2072219000E8C33A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FA82072219000E8C33A /* Main.storyboard */; };
-		D6A93FAC2072219000E8C33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FAB2072219000E8C33A /* Assets.xcassets */; };
-		D6A93FAF2072219000E8C33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FAD2072219000E8C33A /* LaunchScreen.storyboard */; };
+		D6A93FCF2072262800E8C33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A93FCE2072262800E8C33A /* AppDelegate.swift */; };
+		D6A93FD12072262800E8C33A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A93FD02072262800E8C33A /* ViewController.swift */; };
+		D6A93FD42072262800E8C33A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FD22072262800E8C33A /* Main.storyboard */; };
+		D6A93FD62072262800E8C33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FD52072262800E8C33A /* Assets.xcassets */; };
+		D6A93FD92072262800E8C33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FD72072262800E8C33A /* LaunchScreen.storyboard */; };
+		D6A93FE62072267000E8C33A /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D6A93FA12072219000E8C33A /* ZEGOTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZEGOTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6A93FA42072219000E8C33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6A93FA62072219000E8C33A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D6A93FA92072219000E8C33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D6A93FAB2072219000E8C33A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D6A93FAE2072219000E8C33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D6A93FB02072219000E8C33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A93FCB2072262800E8C33A /* ZEGOTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZEGOTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A93FCE2072262800E8C33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6A93FD02072262800E8C33A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6A93FD32072262800E8C33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6A93FD52072262800E8C33A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6A93FD82072262800E8C33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6A93FDA2072262800E8C33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A93FE02072263E00E8C33A /* ZEGOTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZEGOTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZegoLiveRoom.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D6A93F9E2072219000E8C33A /* Frameworks */ = {
+		D6A93FC82072262800E8C33A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A93FE62072267000E8C33A /* ZegoLiveRoom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D6A93F982072219000E8C33A = {
+		D6A93FC22072262800E8C33A = {
 			isa = PBXGroup;
 			children = (
-				D6A93FA32072219000E8C33A /* ZEGOTest */,
-				D6A93FA22072219000E8C33A /* Products */,
+				D6A93FCD2072262800E8C33A /* ZEGOTest */,
+				D6A93FCC2072262800E8C33A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D6A93FA22072219000E8C33A /* Products */ = {
+		D6A93FCC2072262800E8C33A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6A93FA12072219000E8C33A /* ZEGOTest.app */,
+				D6A93FCB2072262800E8C33A /* ZEGOTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D6A93FA32072219000E8C33A /* ZEGOTest */ = {
+		D6A93FCD2072262800E8C33A /* ZEGOTest */ = {
 			isa = PBXGroup;
 			children = (
-				D6A93FA42072219000E8C33A /* AppDelegate.swift */,
-				D6A93FA62072219000E8C33A /* ViewController.swift */,
-				D6A93FA82072219000E8C33A /* Main.storyboard */,
-				D6A93FAB2072219000E8C33A /* Assets.xcassets */,
-				D6A93FAD2072219000E8C33A /* LaunchScreen.storyboard */,
-				D6A93FB02072219000E8C33A /* Info.plist */,
+				D6A93FE42072265300E8C33A /* ZegoLiveTool */,
+				D6A93FCE2072262800E8C33A /* AppDelegate.swift */,
+				D6A93FD02072262800E8C33A /* ViewController.swift */,
+				D6A93FD22072262800E8C33A /* Main.storyboard */,
+				D6A93FD52072262800E8C33A /* Assets.xcassets */,
+				D6A93FD72072262800E8C33A /* LaunchScreen.storyboard */,
+				D6A93FDA2072262800E8C33A /* Info.plist */,
+				D6A93FE02072263E00E8C33A /* ZEGOTest-Bridging-Header.h */,
 			);
 			path = ZEGOTest;
+			sourceTree = "<group>";
+		};
+		D6A93FE42072265300E8C33A /* ZegoLiveTool */ = {
+			isa = PBXGroup;
+			children = (
+				D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */,
+			);
+			path = ZegoLiveTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D6A93FA02072219000E8C33A /* ZEGOTest */ = {
+		D6A93FCA2072262800E8C33A /* ZEGOTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6A93FB32072219000E8C33A /* Build configuration list for PBXNativeTarget "ZEGOTest" */;
+			buildConfigurationList = D6A93FDD2072262800E8C33A /* Build configuration list for PBXNativeTarget "ZEGOTest" */;
 			buildPhases = (
-				D6A93F9D2072219000E8C33A /* Sources */,
-				D6A93F9E2072219000E8C33A /* Frameworks */,
-				D6A93F9F2072219000E8C33A /* Resources */,
+				D6A93FC72072262800E8C33A /* Sources */,
+				D6A93FC82072262800E8C33A /* Frameworks */,
+				D6A93FC92072262800E8C33A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -81,26 +95,27 @@
 			);
 			name = ZEGOTest;
 			productName = ZEGOTest;
-			productReference = D6A93FA12072219000E8C33A /* ZEGOTest.app */;
+			productReference = D6A93FCB2072262800E8C33A /* ZEGOTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D6A93F992072219000E8C33A /* Project object */ = {
+		D6A93FC32072262800E8C33A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "赵宏亚";
 				TargetAttributes = {
-					D6A93FA02072219000E8C33A = {
+					D6A93FCA2072262800E8C33A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = D6A93F9C2072219000E8C33A /* Build configuration list for PBXProject "ZEGOTest" */;
+			buildConfigurationList = D6A93FC62072262800E8C33A /* Build configuration list for PBXProject "ZEGOTest" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,54 +123,54 @@
 				en,
 				Base,
 			);
-			mainGroup = D6A93F982072219000E8C33A;
-			productRefGroup = D6A93FA22072219000E8C33A /* Products */;
+			mainGroup = D6A93FC22072262800E8C33A;
+			productRefGroup = D6A93FCC2072262800E8C33A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6A93FA02072219000E8C33A /* ZEGOTest */,
+				D6A93FCA2072262800E8C33A /* ZEGOTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D6A93F9F2072219000E8C33A /* Resources */ = {
+		D6A93FC92072262800E8C33A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A93FAF2072219000E8C33A /* LaunchScreen.storyboard in Resources */,
-				D6A93FAC2072219000E8C33A /* Assets.xcassets in Resources */,
-				D6A93FAA2072219000E8C33A /* Main.storyboard in Resources */,
+				D6A93FD92072262800E8C33A /* LaunchScreen.storyboard in Resources */,
+				D6A93FD62072262800E8C33A /* Assets.xcassets in Resources */,
+				D6A93FD42072262800E8C33A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D6A93F9D2072219000E8C33A /* Sources */ = {
+		D6A93FC72072262800E8C33A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A93FA72072219000E8C33A /* ViewController.swift in Sources */,
-				D6A93FA52072219000E8C33A /* AppDelegate.swift in Sources */,
+				D6A93FD12072262800E8C33A /* ViewController.swift in Sources */,
+				D6A93FCF2072262800E8C33A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D6A93FA82072219000E8C33A /* Main.storyboard */ = {
+		D6A93FD22072262800E8C33A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D6A93FA92072219000E8C33A /* Base */,
+				D6A93FD32072262800E8C33A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D6A93FAD2072219000E8C33A /* LaunchScreen.storyboard */ = {
+		D6A93FD72072262800E8C33A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D6A93FAE2072219000E8C33A /* Base */,
+				D6A93FD82072262800E8C33A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D6A93FB12072219000E8C33A /* Debug */ = {
+		D6A93FDB2072262800E8C33A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,7 +235,7 @@
 			};
 			name = Debug;
 		};
-		D6A93FB22072219000E8C33A /* Release */ = {
+		D6A93FDC2072262800E8C33A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,31 +285,44 @@
 			};
 			name = Release;
 		};
-		D6A93FB42072219000E8C33A /* Debug */ = {
+		D6A93FDE2072262800E8C33A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZEGOTest/ZegoLiveTool",
+				);
 				INFOPLIST_FILE = ZEGOTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.ZEGOTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZEGOTest/ZEGOTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D6A93FB52072219000E8C33A /* Release */ = {
+		D6A93FDF2072262800E8C33A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZEGOTest/ZegoLiveTool",
+				);
 				INFOPLIST_FILE = ZEGOTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.ZEGOTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZEGOTest/ZEGOTest-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,25 +331,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6A93F9C2072219000E8C33A /* Build configuration list for PBXProject "ZEGOTest" */ = {
+		D6A93FC62072262800E8C33A /* Build configuration list for PBXProject "ZEGOTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6A93FB12072219000E8C33A /* Debug */,
-				D6A93FB22072219000E8C33A /* Release */,
+				D6A93FDB2072262800E8C33A /* Debug */,
+				D6A93FDC2072262800E8C33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6A93FB32072219000E8C33A /* Build configuration list for PBXNativeTarget "ZEGOTest" */ = {
+		D6A93FDD2072262800E8C33A /* Build configuration list for PBXNativeTarget "ZEGOTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6A93FB42072219000E8C33A /* Debug */,
-				D6A93FB52072219000E8C33A /* Release */,
+				D6A93FDE2072262800E8C33A /* Debug */,
+				D6A93FDF2072262800E8C33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D6A93F992072219000E8C33A /* Project object */;
+	rootObject = D6A93FC32072262800E8C33A /* Project object */;
 }
