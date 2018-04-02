@@ -12,7 +12,6 @@
 		D6A93FD42072262800E8C33A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FD22072262800E8C33A /* Main.storyboard */; };
 		D6A93FD62072262800E8C33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FD52072262800E8C33A /* Assets.xcassets */; };
 		D6A93FD92072262800E8C33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FD72072262800E8C33A /* LaunchScreen.storyboard */; };
-		D6A93FE62072267000E8C33A /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */; };
 		D6A93FE9207227DF00E8C33A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FE8207227DF00E8C33A /* libiconv.tbd */; };
 		D6A93FEB207227F000E8C33A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FEA207227F000E8C33A /* libc++.tbd */; };
 		D6A93FED207227FC00E8C33A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FEC207227FC00E8C33A /* CoreMedia.framework */; };
@@ -29,7 +28,21 @@
 		D6A9400B207234D400E8C33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A94009207234D400E8C33A /* LaunchScreen.storyboard */; };
 		D6A94016207234D400E8C33A /* ZEGO__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A94015207234D400E8C33A /* ZEGO__Tests.swift */; };
 		D6A94021207234D500E8C33A /* ZEGO__UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A94020207234D400E8C33A /* ZEGO__UITests.swift */; };
-		D6A940302072353A00E8C33A /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */; };
+		D6A94031207235B000E8C33A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FE8207227DF00E8C33A /* libiconv.tbd */; };
+		D6A94032207235B900E8C33A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FEA207227F000E8C33A /* libc++.tbd */; };
+		D6A94033207235C200E8C33A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FEC207227FC00E8C33A /* CoreMedia.framework */; };
+		D6A94034207235CB00E8C33A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FEE2072280500E8C33A /* CoreTelephony.framework */; };
+		D6A94035207235D500E8C33A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FF02072281000E8C33A /* VideoToolbox.framework */; };
+		D6A94036207235DE00E8C33A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FF22072281A00E8C33A /* AudioToolbox.framework */; };
+		D6A94037207235E700E8C33A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FF42072282500E8C33A /* Security.framework */; };
+		D6A94038207235F100E8C33A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FF62072282F00E8C33A /* SystemConfiguration.framework */; };
+		D6A94039207235F800E8C33A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FF82072283800E8C33A /* AVFoundation.framework */; };
+		D6A9403E207236C500E8C33A /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */; };
+		D6A9403F207236C500E8C33A /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */; };
+		D6A940402072377300E8C33A /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */; };
+		D6A940412072377300E8C33A /* ZegoLiveRoom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6A94043207237CF00E8C33A /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */; };
+		D6A94044207237CF00E8C33A /* ZegoLiveRoom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D6A940422072377400E8C33A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D6A940412072377300E8C33A /* ZegoLiveRoom.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A94045207237CF00E8C33A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D6A94044207237CF00E8C33A /* ZegoLiveRoom.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D6A93FCB2072262800E8C33A /* ZEGOTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZEGOTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A93FCE2072262800E8C33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +96,6 @@
 		D6A93FD82072262800E8C33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6A93FDA2072262800E8C33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6A93FE02072263E00E8C33A /* ZEGOTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZEGOTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZegoLiveRoom.framework; sourceTree = "<group>"; };
 		D6A93FE8207227DF00E8C33A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		D6A93FEA207227F000E8C33A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		D6A93FEC207227FC00E8C33A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -82,6 +119,7 @@
 		D6A94020207234D400E8C33A /* ZEGO__UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZEGO__UITests.swift; sourceTree = "<group>"; };
 		D6A94022207234D500E8C33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6A9402C2072352F00E8C33A /* ZEGO测试-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZEGO测试-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZegoLiveRoom.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +133,11 @@
 				D6A93FF32072281A00E8C33A /* AudioToolbox.framework in Frameworks */,
 				D6A93FF12072281000E8C33A /* VideoToolbox.framework in Frameworks */,
 				D6A93FEF2072280500E8C33A /* CoreTelephony.framework in Frameworks */,
+				D6A9403E207236C500E8C33A /* ZegoLiveRoom.framework in Frameworks */,
 				D6A93FED207227FC00E8C33A /* CoreMedia.framework in Frameworks */,
+				D6A94043207237CF00E8C33A /* ZegoLiveRoom.framework in Frameworks */,
 				D6A93FEB207227F000E8C33A /* libc++.tbd in Frameworks */,
 				D6A93FE9207227DF00E8C33A /* libiconv.tbd in Frameworks */,
-				D6A93FE62072267000E8C33A /* ZegoLiveRoom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +145,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A940302072353A00E8C33A /* ZegoLiveRoom.framework in Frameworks */,
+				D6A94039207235F800E8C33A /* AVFoundation.framework in Frameworks */,
+				D6A94038207235F100E8C33A /* SystemConfiguration.framework in Frameworks */,
+				D6A94037207235E700E8C33A /* Security.framework in Frameworks */,
+				D6A94036207235DE00E8C33A /* AudioToolbox.framework in Frameworks */,
+				D6A94035207235D500E8C33A /* VideoToolbox.framework in Frameworks */,
+				D6A94034207235CB00E8C33A /* CoreTelephony.framework in Frameworks */,
+				D6A9403F207236C500E8C33A /* ZegoLiveRoom.framework in Frameworks */,
+				D6A94033207235C200E8C33A /* CoreMedia.framework in Frameworks */,
+				D6A940402072377300E8C33A /* ZegoLiveRoom.framework in Frameworks */,
+				D6A94032207235B900E8C33A /* libc++.tbd in Frameworks */,
+				D6A94031207235B000E8C33A /* libiconv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +217,7 @@
 		D6A93FE42072265300E8C33A /* ZegoLiveTool */ = {
 			isa = PBXGroup;
 			children = (
-				D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */,
+				D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */,
 			);
 			path = ZegoLiveTool;
 			sourceTree = "<group>";
@@ -231,6 +280,7 @@
 				D6A93FC72072262800E8C33A /* Sources */,
 				D6A93FC82072262800E8C33A /* Frameworks */,
 				D6A93FC92072262800E8C33A /* Resources */,
+				D6A94045207237CF00E8C33A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +298,7 @@
 				D6A93FFA207234D400E8C33A /* Sources */,
 				D6A93FFB207234D400E8C33A /* Frameworks */,
 				D6A93FFC207234D400E8C33A /* Resources */,
+				D6A940422072377400E8C33A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -588,6 +639,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZEGOTest/ZegoLiveTool",
+					"$(PROJECT_DIR)/ZegoLiveTool",
 				);
 				INFOPLIST_FILE = ZEGOTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -612,6 +664,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZEGOTest/ZegoLiveTool",
+					"$(PROJECT_DIR)/ZegoLiveTool",
 				);
 				INFOPLIST_FILE = ZEGOTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -631,13 +684,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZegoLiveTool",
 				);
 				INFOPLIST_FILE = "ZEGO测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zhaohongya.ZEGO--";
+				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.ZEGOhaha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZEGO测试/ZEGO测试-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -653,13 +708,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZegoLiveTool",
 				);
 				INFOPLIST_FILE = "ZEGO测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zhaohongya.ZEGO--";
+				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.ZEGOhaha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZEGO测试/ZEGO测试-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
