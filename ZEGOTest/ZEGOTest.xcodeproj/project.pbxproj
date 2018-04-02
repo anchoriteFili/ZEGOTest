@@ -29,6 +29,7 @@
 		D6A9400B207234D400E8C33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A94009207234D400E8C33A /* LaunchScreen.storyboard */; };
 		D6A94016207234D400E8C33A /* ZEGO__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A94015207234D400E8C33A /* ZEGO__Tests.swift */; };
 		D6A94021207234D500E8C33A /* ZEGO__UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A94020207234D400E8C33A /* ZEGO__UITests.swift */; };
+		D6A940302072353A00E8C33A /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		D6A9401C207234D400E8C33A /* ZEGO测试UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZEGO测试UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A94020207234D400E8C33A /* ZEGO__UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZEGO__UITests.swift; sourceTree = "<group>"; };
 		D6A94022207234D500E8C33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A9402C2072352F00E8C33A /* ZEGO测试-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZEGO测试-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A940302072353A00E8C33A /* ZegoLiveRoom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +198,7 @@
 				D6A94007207234D400E8C33A /* Assets.xcassets */,
 				D6A94009207234D400E8C33A /* LaunchScreen.storyboard */,
 				D6A9400C207234D400E8C33A /* Info.plist */,
+				D6A9402C2072352F00E8C33A /* ZEGO测试-Bridging-Header.h */,
 			);
 			path = "ZEGO测试";
 			sourceTree = "<group>";
@@ -307,6 +311,7 @@
 					};
 					D6A93FFD207234D400E8C33A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					D6A94010207234D400E8C33A = {
@@ -623,12 +628,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZegoLiveTool",
+				);
 				INFOPLIST_FILE = "ZEGO测试/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhaohongya.ZEGO--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZEGO测试/ZEGO测试-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -638,12 +650,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZegoLiveTool",
+				);
 				INFOPLIST_FILE = "ZEGO测试/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhaohongya.ZEGO--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZEGO测试/ZEGO测试-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
