@@ -43,6 +43,10 @@
 		D6A940412072377300E8C33A /* ZegoLiveRoom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D6A94043207237CF00E8C33A /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */; };
 		D6A94044207237CF00E8C33A /* ZegoLiveRoom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6A94048207239A100E8C33A /* ZegoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A94047207239A100E8C33A /* ZegoSettings.m */; };
+		D6A94049207239A100E8C33A /* ZegoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A94047207239A100E8C33A /* ZegoSettings.m */; };
+		D6A9404C20723A2000E8C33A /* ZegoAVKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A9404B20723A2000E8C33A /* ZegoAVKitManager.m */; };
+		D6A9404D20723A2000E8C33A /* ZegoAVKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A9404B20723A2000E8C33A /* ZegoAVKitManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +124,10 @@
 		D6A94022207234D500E8C33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6A9402C2072352F00E8C33A /* ZEGO测试-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZEGO测试-Bridging-Header.h"; sourceTree = "<group>"; };
 		D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZegoLiveRoom.framework; sourceTree = "<group>"; };
+		D6A94046207239A100E8C33A /* ZegoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZegoSettings.h; sourceTree = "<group>"; };
+		D6A94047207239A100E8C33A /* ZegoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZegoSettings.m; sourceTree = "<group>"; };
+		D6A9404A20723A2000E8C33A /* ZegoAVKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZegoAVKitManager.h; sourceTree = "<group>"; };
+		D6A9404B20723A2000E8C33A /* ZegoAVKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZegoAVKitManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +225,10 @@
 		D6A93FE42072265300E8C33A /* ZegoLiveTool */ = {
 			isa = PBXGroup;
 			children = (
+				D6A9404A20723A2000E8C33A /* ZegoAVKitManager.h */,
+				D6A9404B20723A2000E8C33A /* ZegoAVKitManager.m */,
+				D6A94046207239A100E8C33A /* ZegoSettings.h */,
+				D6A94047207239A100E8C33A /* ZegoSettings.m */,
 				D6A9403D207236C500E8C33A /* ZegoLiveRoom.framework */,
 			);
 			path = ZegoLiveTool;
@@ -440,8 +452,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A9404C20723A2000E8C33A /* ZegoAVKitManager.m in Sources */,
 				D6A93FD12072262800E8C33A /* ViewController.swift in Sources */,
 				D6A93FCF2072262800E8C33A /* AppDelegate.swift in Sources */,
+				D6A94048207239A100E8C33A /* ZegoSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,8 +463,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A9404D20723A2000E8C33A /* ZegoAVKitManager.m in Sources */,
 				D6A94003207234D400E8C33A /* ViewController.swift in Sources */,
 				D6A94001207234D400E8C33A /* AppDelegate.swift in Sources */,
+				D6A94049207239A100E8C33A /* ZegoSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
