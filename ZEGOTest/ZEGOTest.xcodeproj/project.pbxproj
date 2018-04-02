@@ -13,6 +13,15 @@
 		D6A93FD62072262800E8C33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FD52072262800E8C33A /* Assets.xcassets */; };
 		D6A93FD92072262800E8C33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A93FD72072262800E8C33A /* LaunchScreen.storyboard */; };
 		D6A93FE62072267000E8C33A /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */; };
+		D6A93FE9207227DF00E8C33A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FE8207227DF00E8C33A /* libiconv.tbd */; };
+		D6A93FEB207227F000E8C33A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FEA207227F000E8C33A /* libc++.tbd */; };
+		D6A93FED207227FC00E8C33A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FEC207227FC00E8C33A /* CoreMedia.framework */; };
+		D6A93FEF2072280500E8C33A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FEE2072280500E8C33A /* CoreTelephony.framework */; };
+		D6A93FF12072281000E8C33A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FF02072281000E8C33A /* VideoToolbox.framework */; };
+		D6A93FF32072281A00E8C33A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FF22072281A00E8C33A /* AudioToolbox.framework */; };
+		D6A93FF52072282500E8C33A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FF42072282500E8C33A /* Security.framework */; };
+		D6A93FF72072282F00E8C33A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FF62072282F00E8C33A /* SystemConfiguration.framework */; };
+		D6A93FF92072283800E8C33A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A93FF82072283800E8C33A /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +34,15 @@
 		D6A93FDA2072262800E8C33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6A93FE02072263E00E8C33A /* ZEGOTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZEGOTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZegoLiveRoom.framework; sourceTree = "<group>"; };
+		D6A93FE8207227DF00E8C33A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		D6A93FEA207227F000E8C33A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D6A93FEC207227FC00E8C33A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D6A93FEE2072280500E8C33A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D6A93FF02072281000E8C33A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		D6A93FF22072281A00E8C33A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D6A93FF42072282500E8C33A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D6A93FF62072282F00E8C33A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D6A93FF82072283800E8C33A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A93FF92072283800E8C33A /* AVFoundation.framework in Frameworks */,
+				D6A93FF72072282F00E8C33A /* SystemConfiguration.framework in Frameworks */,
+				D6A93FF52072282500E8C33A /* Security.framework in Frameworks */,
+				D6A93FF32072281A00E8C33A /* AudioToolbox.framework in Frameworks */,
+				D6A93FF12072281000E8C33A /* VideoToolbox.framework in Frameworks */,
+				D6A93FEF2072280500E8C33A /* CoreTelephony.framework in Frameworks */,
+				D6A93FED207227FC00E8C33A /* CoreMedia.framework in Frameworks */,
+				D6A93FEB207227F000E8C33A /* libc++.tbd in Frameworks */,
+				D6A93FE9207227DF00E8C33A /* libiconv.tbd in Frameworks */,
 				D6A93FE62072267000E8C33A /* ZegoLiveRoom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,6 +71,7 @@
 			children = (
 				D6A93FCD2072262800E8C33A /* ZEGOTest */,
 				D6A93FCC2072262800E8C33A /* Products */,
+				D6A93FE7207227DF00E8C33A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +104,22 @@
 				D6A93FE52072267000E8C33A /* ZegoLiveRoom.framework */,
 			);
 			path = ZegoLiveTool;
+			sourceTree = "<group>";
+		};
+		D6A93FE7207227DF00E8C33A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6A93FF82072283800E8C33A /* AVFoundation.framework */,
+				D6A93FF62072282F00E8C33A /* SystemConfiguration.framework */,
+				D6A93FF42072282500E8C33A /* Security.framework */,
+				D6A93FF22072281A00E8C33A /* AudioToolbox.framework */,
+				D6A93FF02072281000E8C33A /* VideoToolbox.framework */,
+				D6A93FEE2072280500E8C33A /* CoreTelephony.framework */,
+				D6A93FEC207227FC00E8C33A /* CoreMedia.framework */,
+				D6A93FEA207227F000E8C33A /* libc++.tbd */,
+				D6A93FE8207227DF00E8C33A /* libiconv.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
