@@ -26,6 +26,8 @@
 		D6A940642073213A00E8C33A /* ZegoAudioRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A940632073213A00E8C33A /* ZegoAudioRoom.framework */; };
 		D6A940652073214400E8C33A /* ZegoAudioRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A940632073213A00E8C33A /* ZegoAudioRoom.framework */; };
 		D6A940662073214400E8C33A /* ZegoAudioRoom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6A940632073213A00E8C33A /* ZegoAudioRoom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6A9406A2073249A00E8C33A /* ZegoAudioLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A940682073249A00E8C33A /* ZegoAudioLiveViewController.m */; };
+		D6A9406B2073249A00E8C33A /* ZegoAudioLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A940692073249A00E8C33A /* ZegoAudioLiveViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +67,9 @@
 		D6A9405D20731FDB00E8C33A /* ZegoAVKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZegoAVKitManager.h; sourceTree = "<group>"; };
 		D6A9405E20731FDB00E8C33A /* ZegoAVKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZegoAVKitManager.m; sourceTree = "<group>"; };
 		D6A940632073213A00E8C33A /* ZegoAudioRoom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZegoAudioRoom.framework; sourceTree = "<group>"; };
+		D6A940672073249A00E8C33A /* ZegoAudioLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoAudioLiveViewController.h; sourceTree = "<group>"; };
+		D6A940682073249A00E8C33A /* ZegoAudioLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoAudioLiveViewController.m; sourceTree = "<group>"; };
+		D6A940692073249A00E8C33A /* ZegoAudioLiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZegoAudioLiveViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,9 @@
 				D6A9405E20731FDB00E8C33A /* ZegoAVKitManager.m */,
 				D6A9405A20731FBC00E8C33A /* ZegoSettings.h */,
 				D6A9405B20731FBC00E8C33A /* ZegoSettings.m */,
+				D6A940672073249A00E8C33A /* ZegoAudioLiveViewController.h */,
+				D6A940682073249A00E8C33A /* ZegoAudioLiveViewController.m */,
+				D6A940692073249A00E8C33A /* ZegoAudioLiveViewController.xib */,
 			);
 			path = ZegoLiveTool;
 			sourceTree = "<group>";
@@ -212,6 +220,7 @@
 			files = (
 				D6A93FD92072262800E8C33A /* LaunchScreen.storyboard in Resources */,
 				D6A93FD62072262800E8C33A /* Assets.xcassets in Resources */,
+				D6A9406B2073249A00E8C33A /* ZegoAudioLiveViewController.xib in Resources */,
 				D6A93FD42072262800E8C33A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A9406A2073249A00E8C33A /* ZegoAudioLiveViewController.m in Sources */,
 				D6A9405F20731FDC00E8C33A /* ZegoAVKitManager.m in Sources */,
 				D6A93FD12072262800E8C33A /* ViewController.swift in Sources */,
 				D6A93FCF2072262800E8C33A /* AppDelegate.swift in Sources */,
