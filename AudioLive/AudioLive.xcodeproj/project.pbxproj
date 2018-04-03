@@ -15,6 +15,17 @@
 		D6A940D0207353AB00E8C33A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A940CF207353AB00E8C33A /* main.m */; };
 		D6A940DA207353AC00E8C33A /* AudioLiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A940D9207353AC00E8C33A /* AudioLiveTests.m */; };
 		D6A940E5207353AC00E8C33A /* AudioLiveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A940E4207353AC00E8C33A /* AudioLiveUITests.m */; };
+		D6A940F42073546100E8C33A /* ZegoAudioRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A940F32073546100E8C33A /* ZegoAudioRoom.framework */; };
+		D6A940F62073547A00E8C33A /* ZegoAudioRoom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6A940F32073546100E8C33A /* ZegoAudioRoom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6A940FA207354E100E8C33A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A940F9207354E100E8C33A /* libiconv.tbd */; };
+		D6A940FC207354E900E8C33A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A940FB207354E900E8C33A /* libc++.tbd */; };
+		D6A940FE207354F400E8C33A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A940FD207354F400E8C33A /* CoreMedia.framework */; };
+		D6A94100207354FD00E8C33A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A940FF207354FD00E8C33A /* CoreTelephony.framework */; };
+		D6A941022073550500E8C33A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A941012073550500E8C33A /* VideoToolbox.framework */; };
+		D6A941042073551000E8C33A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A941032073551000E8C33A /* AudioToolbox.framework */; };
+		D6A941062073551900E8C33A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A941052073551900E8C33A /* Security.framework */; };
+		D6A941082073552200E8C33A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A941072073552200E8C33A /* SystemConfiguration.framework */; };
+		D6A9410A2073552B00E8C33A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A941092073552B00E8C33A /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D6A940F72073547A00E8C33A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D6A940F62073547A00E8C33A /* ZegoAudioRoom.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D6A940BD207353AB00E8C33A /* AudioLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A940C0207353AB00E8C33A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +76,20 @@
 		D6A940E0207353AC00E8C33A /* AudioLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A940E4207353AC00E8C33A /* AudioLiveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioLiveUITests.m; sourceTree = "<group>"; };
 		D6A940E6207353AC00E8C33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A940F32073546100E8C33A /* ZegoAudioRoom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZegoAudioRoom.framework; sourceTree = "<group>"; };
+		D6A940F9207354E100E8C33A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		D6A940FB207354E900E8C33A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D6A940FD207354F400E8C33A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D6A940FF207354FD00E8C33A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D6A941012073550500E8C33A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		D6A941032073551000E8C33A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D6A941052073551900E8C33A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D6A941072073552200E8C33A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D6A941092073552B00E8C33A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D6A9410B207355F600E8C33A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D6A9410C207355F600E8C33A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D6A9410E2073560E00E8C33A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		D6A941102073562400E8C33A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +97,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A9410A2073552B00E8C33A /* AVFoundation.framework in Frameworks */,
+				D6A941082073552200E8C33A /* SystemConfiguration.framework in Frameworks */,
+				D6A941062073551900E8C33A /* Security.framework in Frameworks */,
+				D6A941042073551000E8C33A /* AudioToolbox.framework in Frameworks */,
+				D6A941022073550500E8C33A /* VideoToolbox.framework in Frameworks */,
+				D6A94100207354FD00E8C33A /* CoreTelephony.framework in Frameworks */,
+				D6A940FE207354F400E8C33A /* CoreMedia.framework in Frameworks */,
+				D6A940FC207354E900E8C33A /* libc++.tbd in Frameworks */,
+				D6A940FA207354E100E8C33A /* libiconv.tbd in Frameworks */,
+				D6A940F42073546100E8C33A /* ZegoAudioRoom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +134,7 @@
 				D6A940D8207353AC00E8C33A /* AudioLiveTests */,
 				D6A940E3207353AC00E8C33A /* AudioLiveUITests */,
 				D6A940BE207353AB00E8C33A /* Products */,
+				D6A940F8207354E100E8C33A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +151,7 @@
 		D6A940BF207353AB00E8C33A /* AudioLive */ = {
 			isa = PBXGroup;
 			children = (
+				D6A940F22073541E00E8C33A /* ZegoVideoTool */,
 				D6A940C0207353AB00E8C33A /* AppDelegate.h */,
 				D6A940C1207353AB00E8C33A /* AppDelegate.m */,
 				D6A940C3207353AB00E8C33A /* ViewController.h */,
@@ -132,6 +183,30 @@
 			path = AudioLiveUITests;
 			sourceTree = "<group>";
 		};
+		D6A940F22073541E00E8C33A /* ZegoVideoTool */ = {
+			isa = PBXGroup;
+			children = (
+				D6A940F32073546100E8C33A /* ZegoAudioRoom.framework */,
+			);
+			path = ZegoVideoTool;
+			sourceTree = "<group>";
+		};
+		D6A940F8207354E100E8C33A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6A941092073552B00E8C33A /* AVFoundation.framework */,
+				D6A941072073552200E8C33A /* SystemConfiguration.framework */,
+				D6A941052073551900E8C33A /* Security.framework */,
+				D6A941032073551000E8C33A /* AudioToolbox.framework */,
+				D6A941012073550500E8C33A /* VideoToolbox.framework */,
+				D6A940FF207354FD00E8C33A /* CoreTelephony.framework */,
+				D6A940FD207354F400E8C33A /* CoreMedia.framework */,
+				D6A940FB207354E900E8C33A /* libc++.tbd */,
+				D6A940F9207354E100E8C33A /* libiconv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +217,7 @@
 				D6A940B9207353AB00E8C33A /* Sources */,
 				D6A940BA207353AB00E8C33A /* Frameworks */,
 				D6A940BB207353AB00E8C33A /* Resources */,
+				D6A940F72073547A00E8C33A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +383,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				D6A940C7207353AB00E8C33A /* Base */,
+				D6A9410B207355F600E8C33A /* zh-Hans */,
+				D6A9410E2073560E00E8C33A /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -315,6 +393,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				D6A940CC207353AB00E8C33A /* Base */,
+				D6A9410C207355F600E8C33A /* zh-Hans */,
+				D6A941102073562400E8C33A /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -326,6 +406,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -381,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -432,7 +514,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioLive/ZegoVideoTool",
+				);
 				INFOPLIST_FILE = AudioLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.AudioLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,7 +534,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioLive/ZegoVideoTool",
+				);
 				INFOPLIST_FILE = AudioLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.AudioLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
