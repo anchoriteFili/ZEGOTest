@@ -26,6 +26,10 @@
 		D6A941062073551900E8C33A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A941052073551900E8C33A /* Security.framework */; };
 		D6A941082073552200E8C33A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A941072073552200E8C33A /* SystemConfiguration.framework */; };
 		D6A9410A2073552B00E8C33A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A941092073552B00E8C33A /* AVFoundation.framework */; };
+		D6A94113207356C600E8C33A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6A94115207356C600E8C33A /* Localizable.strings */; };
+		D6A94119207357C100E8C33A /* ZegoVideoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A94118207357C100E8C33A /* ZegoVideoRootViewController.m */; };
+		D6A9411C2073585600E8C33A /* ZegoAVKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A9411B2073585600E8C33A /* ZegoAVKitManager.m */; };
+		D6A9411F20735A4F00E8C33A /* ZegoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A9411E20735A4F00E8C33A /* ZegoSettings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,15 @@
 		D6A9410C207355F600E8C33A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D6A9410E2073560E00E8C33A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		D6A941102073562400E8C33A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D6A94114207356C600E8C33A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D6A94116207356C700E8C33A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D6A94117207357C100E8C33A /* ZegoVideoRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoVideoRootViewController.h; sourceTree = "<group>"; };
+		D6A94118207357C100E8C33A /* ZegoVideoRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoVideoRootViewController.m; sourceTree = "<group>"; };
+		D6A9411A2073585600E8C33A /* ZegoAVKitManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoAVKitManager.h; sourceTree = "<group>"; };
+		D6A9411B2073585600E8C33A /* ZegoAVKitManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoAVKitManager.m; sourceTree = "<group>"; };
+		D6A9411D20735A4F00E8C33A /* ZegoSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoSettings.h; sourceTree = "<group>"; };
+		D6A9411E20735A4F00E8C33A /* ZegoSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoSettings.m; sourceTree = "<group>"; };
+		D6A9412020735B1800E8C33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +169,14 @@
 				D6A940C1207353AB00E8C33A /* AppDelegate.m */,
 				D6A940C3207353AB00E8C33A /* ViewController.h */,
 				D6A940C4207353AB00E8C33A /* ViewController.m */,
+				D6A94117207357C100E8C33A /* ZegoVideoRootViewController.h */,
+				D6A94118207357C100E8C33A /* ZegoVideoRootViewController.m */,
+				D6A9411A2073585600E8C33A /* ZegoAVKitManager.h */,
+				D6A9411B2073585600E8C33A /* ZegoAVKitManager.m */,
+				D6A9411D20735A4F00E8C33A /* ZegoSettings.h */,
+				D6A9411E20735A4F00E8C33A /* ZegoSettings.m */,
 				D6A940C6207353AB00E8C33A /* Main.storyboard */,
+				D6A94115207356C600E8C33A /* Localizable.strings */,
 				D6A940C9207353AB00E8C33A /* Assets.xcassets */,
 				D6A940CB207353AB00E8C33A /* LaunchScreen.storyboard */,
 				D6A940CE207353AB00E8C33A /* Info.plist */,
@@ -315,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6A940CD207353AB00E8C33A /* LaunchScreen.storyboard in Resources */,
+				D6A94113207356C600E8C33A /* Localizable.strings in Resources */,
 				D6A940CA207353AB00E8C33A /* Assets.xcassets in Resources */,
 				D6A940C8207353AB00E8C33A /* Main.storyboard in Resources */,
 			);
@@ -341,9 +362,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A9411C2073585600E8C33A /* ZegoAVKitManager.m in Sources */,
 				D6A940C5207353AB00E8C33A /* ViewController.m in Sources */,
 				D6A940D0207353AB00E8C33A /* main.m in Sources */,
 				D6A940C2207353AB00E8C33A /* AppDelegate.m in Sources */,
+				D6A94119207357C100E8C33A /* ZegoVideoRootViewController.m in Sources */,
+				D6A9411F20735A4F00E8C33A /* ZegoSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +421,16 @@
 				D6A941102073562400E8C33A /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D6A94115207356C600E8C33A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6A94114207356C600E8C33A /* zh-Hans */,
+				D6A94116207356C700E8C33A /* en */,
+				D6A9412020735B1800E8C33A /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
