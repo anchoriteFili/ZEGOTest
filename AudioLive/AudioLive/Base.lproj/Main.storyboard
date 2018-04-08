@@ -14,7 +14,7 @@
         <!--AudioLive-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ZegoVideoRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vyM-mC-Tco"/>
                         <viewControllerLayoutGuide type="bottom" id="rDD-YN-nO8"/>
@@ -60,6 +60,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sessionIdText" destination="YqI-b9-8g0" id="ykk-aD-hrb"/>
+                        <outlet property="videoTalkButton" destination="btW-f8-yhS" id="W5q-Gi-9vi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

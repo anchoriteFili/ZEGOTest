@@ -18,6 +18,28 @@ typedef enum : NSUInteger {
 
 @interface ZegoAudioLive : NSObject
 
++ (ZegoAudioRoomApi *)api;
++ (void)releaseApi;
 
++ (void)setCustomAppID:(uint32_t)appid sign:(NSString *)sign;
++ (uint32_t)appID;
+
++ (void)setUsingTestEnv:(bool)testEnv;
++ (bool)usingTestEnv;
+
++ (bool)usingAlphaEnv;
+
++ (bool)manualPublish;
++ (void)setUsingManualPublish:(bool)manual;
+
++ (void)setUsingInternationDomain:(bool)bUse;
++ (bool)usingInternationDomain;
+
++ (void)setAppType:(ZegoAppType)type;
++ (ZegoAppType)appType;
+
++ (NSString *)customAppSign;
+
++ (NSData *)zegoAppSignFromServer;
 
 @end
