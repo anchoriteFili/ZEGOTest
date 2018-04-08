@@ -238,6 +238,7 @@
 				D6A940BA207353AB00E8C33A /* Frameworks */,
 				D6A940BB207353AB00E8C33A /* Resources */,
 				D6A940F72073547A00E8C33A /* Embed Frameworks */,
+				D6A9417F2079CA5300E8C33A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -356,6 +357,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D6A9417F2079CA5300E8C33A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python ${SRCROOT}/${TARGET_NAME}/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D6A940B9207353AB00E8C33A /* Sources */ = {
