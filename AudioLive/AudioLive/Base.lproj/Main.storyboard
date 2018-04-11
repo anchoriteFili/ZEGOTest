@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="538" y="234"/>
         </scene>
-        <!--View Controller-->
+        <!--Zego Audio Live View Controller-->
         <scene sceneID="tIf-Vu-mK8">
             <objects>
-                <viewController id="JqQ-Gs-K2s" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="videoTalkStoryboardID" id="JqQ-Gs-K2s" customClass="ZegoAudioLiveViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z8i-3F-gKs"/>
                         <viewControllerLayoutGuide type="bottom" id="zgW-sn-DjR"/>
@@ -209,6 +208,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EEQ-l8-93k"/>
+                    <connections>
+                        <outlet property="messageButton" destination="dVB-Lr-U3d" id="AHp-Gg-B1C"/>
+                        <outlet property="micButton" destination="CH8-TY-YKH" id="Q2q-85-Z2F"/>
+                        <outlet property="mutedButton" destination="msv-Rh-nZ3" id="jhe-cF-zvd"/>
+                        <outlet property="publishButton" destination="mui-jg-sgq" id="LDi-Zx-vYO"/>
+                        <outlet property="tableView" destination="OdZ-m4-f9J" id="qdS-By-SFP"/>
+                        <outlet property="tipsLabel" destination="Vos-Hw-RBv" id="0lT-k0-6DK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lI0-FV-txq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
