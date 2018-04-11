@@ -39,7 +39,7 @@
                                 </constraints>
                                 <state key="normal" title="开始音频通话"/>
                                 <connections>
-                                    <segue destination="JqQ-Gs-K2s" kind="presentation" id="Cy5-z5-bIu"/>
+                                    <segue destination="JqQ-Gs-K2s" kind="presentation" identifier="presentVideoTalk" id="Cy5-z5-bIu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -88,6 +88,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="开始直播"/>
+                                <connections>
+                                    <action selector="onPublishButton:" destination="JqQ-Gs-K2s" eventType="touchUpInside" id="inY-Ta-smZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8y-qA-KZb">
                                 <rect key="frame" x="313" y="46" width="46" height="30"/>
@@ -96,6 +99,9 @@
                                     <constraint firstAttribute="width" constant="46" id="THe-bD-SMA"/>
                                 </constraints>
                                 <state key="normal" title="关闭"/>
+                                <connections>
+                                    <action selector="closeView:" destination="JqQ-Gs-K2s" eventType="touchUpInside" id="Irb-SJ-tCx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nq8-aN-e6z">
                                 <rect key="frame" x="247" y="44" width="46" height="30"/>
@@ -115,6 +121,9 @@
                                     <constraint firstAttribute="width" constant="46" id="Toi-4F-oEH"/>
                                 </constraints>
                                 <state key="normal" title="静音"/>
+                                <connections>
+                                    <action selector="onMutedButton:" destination="JqQ-Gs-K2s" eventType="touchUpInside" id="9F4-Uh-MvS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始登陆房间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vos-Hw-RBv">
                                 <rect key="frame" x="16" y="91" width="343" height="18"/>
@@ -132,6 +141,9 @@
                                     <constraint firstAttribute="height" constant="20" id="9Y3-zP-53Z"/>
                                 </constraints>
                                 <state key="normal" title="广播测试"/>
+                                <connections>
+                                    <action selector="onMessageButton:" destination="JqQ-Gs-K2s" eventType="touchUpInside" id="YP6-NG-ZmG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CH8-TY-YKH">
                                 <rect key="frame" x="273" y="123" width="80" height="20"/>
@@ -140,6 +152,9 @@
                                     <constraint firstAttribute="width" constant="80" id="nck-8F-ilH"/>
                                 </constraints>
                                 <state key="normal" title="关闭麦克风"/>
+                                <connections>
+                                    <action selector="onMicButton:" destination="JqQ-Gs-K2s" eventType="touchUpInside" id="gp7-yd-2bj"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OdZ-m4-f9J">
                                 <rect key="frame" x="0.0" y="179" width="375" height="488"/>

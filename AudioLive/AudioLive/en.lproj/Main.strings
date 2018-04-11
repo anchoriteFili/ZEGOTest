@@ -1,10 +1,10 @@
 
 
 /* Class = "UIButton"; normalTitle = "关闭"; ObjectID = "w8y-qA-KZb"; */
-"w8y-qA-KZb.normalTitle" = "关闭";
+"w8y-qA-KZb.normalTitle" = "Close";
 
 /* Class = "UILabel"; text = "用户名"; ObjectID = "hP8-Fk-cbA"; */
-"hP8-Fk-cbA.text" = "用户名";
+"hP8-Fk-cbA.text" = "User Name";
 
 /* Class = "UILabel"; text = "Subtitle"; ObjectID = "Kry-UO-egD"; */
 "Kry-UO-egD.text" = "Subtitle";
@@ -13,37 +13,37 @@
 "Nox-V2-nla.headerTitle" = "ENVIRONMENT";
 
 /* Class = "UIButton"; normalTitle = "关闭麦克风"; ObjectID = "CH8-TY-YKH"; */
-"CH8-TY-YKH.normalTitle" = "关闭麦克风";
+"CH8-TY-YKH.normalTitle" = "Disable Mic";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "dV2-zf-FGa"; */
 "dV2-zf-FGa.text" = "Title";
 
 /* Class = "UIButton"; normalTitle = "广播测试"; ObjectID = "dVB-Lr-U3d"; */
-"dVB-Lr-U3d.normalTitle" = "广播测试";
+"dVB-Lr-U3d.normalTitle" = "Broadcast Test";
 
 /* Class = "UITableViewSection"; headerTitle = "ADVANCED"; ObjectID = "NtY-t5-oYR"; */
 "NtY-t5-oYR.headerTitle" = "ADVANCED";
 
 /* Class = "UIBarButtonItem"; title = "设置"; ObjectID = "LmI-ve-0cZ"; */
-"LmI-ve-0cZ.title" = "设置";
+"LmI-ve-0cZ.title" = "Setting";
 
 /* Class = "UINavigationItem"; title = "日志"; ObjectID = "YYm-Aa-zku"; */
-"YYm-Aa-zku.title" = "日志";
+"YYm-Aa-zku.title" = "Log";
 
 /* Class = "UIButton"; normalTitle = "开始直播"; ObjectID = "mui-jg-sgq"; */
-"mui-jg-sgq.normalTitle" = "开始直播";
+"mui-jg-sgq.normalTitle" = "Start Publishing";
 
 /* Class = "UILabel"; text = "用户ID"; ObjectID = "wVG-Bo-48d"; */
-"wVG-Bo-48d.text" = "用户ID";
+"wVG-Bo-48d.text" = "User ID";
 
 /* Class = "UILabel"; text = "APP ID"; ObjectID = "yMk-K8-rgS"; */
 "yMk-K8-rgS.text" = "APP ID";
 
 /* Class = "UILabel"; text = "关于"; ObjectID = "5g3-LK-fDi"; */
-"5g3-LK-fDi.text" = "关于";
+"5g3-LK-fDi.text" = "About";
 
 /* Class = "UIButton"; normalTitle = "静音"; ObjectID = "msv-Rh-nZ3"; */
-"msv-Rh-nZ3.normalTitle" = "静音";
+"msv-Rh-nZ3.normalTitle" = "Mute";
 
 /* Class = "UILabel"; text = "Share Log"; ObjectID = "1Vg-Ud-uKV"; */
 "1Vg-Ud-uKV.text" = "Share Log";
@@ -55,19 +55,19 @@
 "rWF-hL-mtr.text" = "APP Sign";
 
 /* Class = "UIButton"; normalTitle = "开始音频通话"; ObjectID = "btW-f8-yhS"; */
-"btW-f8-yhS.normalTitle" = "开始音频通话";
+"btW-f8-yhS.normalTitle" = "Start Audio Live";
 
 /* Class = "UINavigationItem"; title = "ZEGO"; ObjectID = "1UG-Gv-AIm"; */
 "1UG-Gv-AIm.title" = "ZEGO";
 
 /* Class = "UILabel"; text = "App 版本"; ObjectID = "jhU-6c-hRq"; */
-"jhU-6c-hRq.text" = "App 版本";
+"jhU-6c-hRq.text" = "App Type";
 
 /* Class = "UILabel"; text = "测试环境"; ObjectID = "yOK-m4-WVc"; */
-"yOK-m4-WVc.text" = "测试环境";
+"yOK-m4-WVc.text" = "Test Environment";
 
 /* Class = "UILabel"; text = "手动开播"; ObjectID = "uaf-0Y-KD5"; */
-"uaf-0Y-KD5.text" = "手动开播";
+"uaf-0Y-KD5.text" = "Manually Publish";
 
 /* Class = "UILabel"; text = "App Sign"; ObjectID = "bn4-05-r92"; */
 "bn4-05-r92.text" = "App Sign";
@@ -76,19 +76,19 @@
 "UNH-1Y-TeL.headerTitle" = "VERSION";
 
 /* Class = "UIButton"; normalTitle = "日志"; ObjectID = "Nq8-aN-e6z"; */
-"Nq8-aN-e6z.normalTitle" = "日志";
+"Nq8-aN-e6z.normalTitle" = "Log";
 
 /* Class = "UILabel"; text = "开始登陆房间"; ObjectID = "Vos-Hw-RBv"; */
-"Vos-Hw-RBv.text" = "开始登陆房间";
+"Vos-Hw-RBv.text" = "Start Logining Room";
 
 /* Class = "UITableViewSection"; headerTitle = "ABOUT"; ObjectID = "gPD-6R-3mf"; */
 "gPD-6R-3mf.headerTitle" = "ABOUT";
 
 /* Class = "UIBarButtonItem"; title = "完成"; ObjectID = "QCv-vK-scT"; */
-"QCv-vK-scT.title" = "完成";
+"QCv-vK-scT.title" = "Done";
 
 /* Class = "UILabel"; text = "测试环境"; ObjectID = "Myd-WR-jlK"; */
-"Myd-WR-jlK.text" = "测试环境";
+"Myd-WR-jlK.text" = "Test Environment";
 
 /* Class = "UILabel"; text = "Upload Log"; ObjectID = "ZbZ-Ok-Z6k"; */
 "ZbZ-Ok-Z6k.text" = "Upload Log";

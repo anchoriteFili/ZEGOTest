@@ -9,6 +9,7 @@
 #import "ZegoVideoRootViewController.h"
 #import "ZegoSettings.h"
 #import "ZegoAVKitManager.h"
+#import "ZegoAudioLiveViewController.h"
 
 @interface ZegoVideoRootViewController ()
 
@@ -86,8 +87,8 @@
     // Pass the selected object to the new view controller.
     if ([segue.identifier isEqualToString:@"presentVideoTalk"])
     {
-//        ZegoAudioLiveViewController *viewController = (ZegoAudioLiveViewController *)segue.destinationViewController;
-//        viewController.sessionID = self.sessionIdText.text;
+        ZegoAudioLiveViewController *viewController = (ZegoAudioLiveViewController *)segue.destinationViewController;
+        viewController.sessionID = self.sessionIdText.text;
     }
 }
 

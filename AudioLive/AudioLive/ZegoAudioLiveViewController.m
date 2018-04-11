@@ -8,6 +8,7 @@
 
 #import "ZegoAudioLiveViewController.h"
 #import "ZegoAVKitManager.h"
+#import "ZegoSettings.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface ZegoAudioLiveViewController () <ZegoAudioLivePublisherDelegate, ZegoAudioLivePlayerDelegate, ZegoAudioRoomDelegate, ZegoAudioIMDelegate>
@@ -107,6 +108,92 @@
     return YES;
 }
 
+#pragma mark 开始直播点击
+- (IBAction)onPublishButton:(UIButton *)sender {
+    
+    if (self.isPublished) { // 如果是直播状态
+        
+        // 停止直播
+        [[ZegoAudioLive api] stopPublish];
+        [self.publishButton setTitle:NSLocalizedString(@"开始直播", nil) forState:UIControlStateNormal];
+        self.isPublished = NO;
+        
+        // 删除流
+        for (ZegoAudioStream *audioStream in self.streamList) {
+            
+            if ([audioStream.userID isEqualToString:[ZegoSettings sharedInstance].userID]) {
+                [self.streamList removeObject:audioStream];
+                break;
+            }
+            [self.tableView reloadData];
+        }
+    } else { // 如果是停播状态
+        BOOL result = [[ZegoAudioLive api] startPublish];
+        
+        if (result == NO) {
+            self.tipsLabel.text = NSLocalizedString(@"开播失败，直播流超过上线", nil);
+        } else {
+            [self.publishButton setTitle:NSLocalizedString(@"停止直播", nil) forState:UIControlStateNormal];
+            self.publishButton.enabled = NO;
+        }
+    }
+}
+
+#pragma mark 关闭按钮点击，关闭房间
+- (IBAction)closeView:(UIButton *)sender {
+    
+    [[ZegoAudioLive api] logoutRoom];
+    [self.streamList removeAllObjects];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark 静音按钮
+- (IBAction)onMutedButton:(UIButton *)sender {
+    
+    if (self.enableSpeaker) {
+        self.enableSpeaker = NO;
+        [self.mutedButton setTitleColor:self.defaultButtonColor forState:UIControlStateNormal];
+    } else {
+        self.enableSpeaker = YES;
+        [self.mutedButton setTitleColor:self.defaultButtonColor forState:UIControlStateNormal];
+    }
+    //
+    [[ZegoAudioLive api] enableSpeaker:self.enableSpeaker];
+}
+
+#pragma mark 广播测试按钮点击事件
+- (IBAction)onMessageButton:(UIButton *)sender {
+    
+    NSString *content = [NSString stringWithFormat:@"%@ hand shake", [self getCurrentTime]];
+    
+    
+    [[ZegoAudioLive api] sendRoomMessage:content type:ZEGO_TEXT category:ZEGO_CHAT priority:ZEGO_DEFAULT completion:^(int errorCode, NSString *roomId, unsigned long long messageId) {
+        if (errorCode == 0) {
+            [self addLogString:@"message send success"];
+        }
+    }];
+}
+
+#pragma mark 关闭麦克风按钮点击事件
+- (IBAction)onMicButton:(UIButton *)sender {
+    
+    if (self.enableMic) {
+        self.enableMic = NO;
+        [self.micButton setTitle:NSLocalizedString(@"打开麦克风", nil) forState:UIControlStateNormal];
+        
+        [self.micButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    } else {
+        self.enableMic = YES;
+        [self.micButton setTitle:NSLocalizedString(@"关闭麦克风", nil) forState:UIControlStateNormal];
+        [self.micButton setTitleColor:self.defaultButtonColor forState:UIControlStateNormal];
+    }
+    
+    // 打开关闭麦克风方法
+    [[ZegoAudioLive api] enableMic:self.enableMic];
+}
+
+
+
 #pragma mark 显示提示窗
 - (void)showAuthorizationAlert:(NSString *)message title:(NSString *)title {
     
@@ -159,19 +246,158 @@
     return [formatter stringFromDate:[NSDate date]];
 }
 
+#pragma mark 通知方法
+- (void)audioSessionWasInterrupted:(NSNotification *)notification {
+    
+    if (AVAudioSessionInterruptionTypeBegan == [notification.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
+        NSLog(@"开始录音");
+        
+    } else if (AVAudioSessionInterruptionTypeEnded == [notification.userInfo[AVAudioSessionInterruptionTypeKey] intValue]) {
+        NSLog(@"结束录音");
+    }
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
 }
-*/
+
+#pragma mark ********** 相关代理方法 **********
+
+#pragma mark 推流状态更新
+- (void)onPublishStateUpdate:(int)stateCode streamID:(NSString *)streamID streamInfo:(NSDictionary *)info {
+    
+    if (stateCode == 0) {
+        [self addLogString:[NSString stringWithFormat:NSLocalizedString(@"推流成功: %@", nil), streamID]];
+        
+        self.tipsLabel.text = NSLocalizedString(@"推流成功", nil);
+        if ([ZegoAudioLive manualPublish]) {
+            self.publishButton.enabled = YES;
+            self.isPublished = YES;
+        }
+        
+        ZegoAudioStream *audioStream = [ZegoAudioStream new];
+        audioStream.streamID = streamID;
+        audioStream.userName = [ZegoSettings sharedInstance].userName;
+        
+        [self.streamList addObject:audioStream];
+        [self.tableView reloadData];
+    } else {
+        
+        if ([ZegoAudioLive manualPublish]) {
+            self.publishButton.enabled = YES;
+            self.isPublished = NO;
+            
+            [self.publishButton setTitle:NSLocalizedString(@"开始直播", nil) forState:UIControlStateNormal];
+        }
+        
+        [self addLogString:[NSString stringWithFormat:NSLocalizedString(@"推流失败: %@, error:%d", nil), streamID, stateCode]];
+        self.tipsLabel.text = [NSString stringWithFormat:NSLocalizedString(@"推流失败:%d", nil), stateCode];
+    }
+}
+
+#pragma mark 播放流事件
+- (void)onPlayStateUpdate:(int)stateCode stream:(ZegoAudioStream *)stream {
+    if (stateCode == 0)
+    {
+        [self addLogString:[NSString stringWithFormat:NSLocalizedString(@"拉流成功: %@", nil), stream.streamID]];
+        self.tipsLabel.text = NSLocalizedString(@"拉流成功", nil);
+    }
+    else
+    {
+        [self addLogString:[NSString stringWithFormat:NSLocalizedString(@"拉流失败: %@, error: %d", nil), stream.streamID, stateCode]];
+        self.tipsLabel.text = [NSString stringWithFormat:NSLocalizedString(@"拉流失败: %d", nil), stateCode];
+    }
+}
+
+#pragma mark 观看质量更新
+- (void)onPlayQualityUpate:(NSString *)streamID quality:(ZegoApiPlayQuality)quality {
+    
+    NSLog(@"onPlayQualityUpate, streamID: %@, quality: %d, audiobiterate: %fkb",streamID, quality.quality, quality.akbps);
+}
+
+
+#pragma mark - ZegoAudioRoomDelegate
+
+#pragma mark 与server断开通知
+- (void)onDisconnect:(int)errorCode roomID:(NSString *)roomID {
+    
+    [self addLogString:[NSString stringWithFormat:NSLocalizedString(@"连接房间失败 %d", nil), errorCode]];
+}
+
+#pragma mark  流更新消息，此时sdk会开始拉流/停止拉流
+- (void)onStreamUpdated:(ZegoAudioStreamType)type stream:(ZegoAudioStream *)stream {
+    
+    if (type == ZEGO_AUDIO_STREAM_ADD) { /** 音频流新增 */
+        
+        BOOL alreadyHave = NO;
+        
+        for (ZegoAudioStream *playSteam in self.streamList) {
+            
+            if ([playSteam.streamID isEqualToString:stream.streamID]) {
+                alreadyHave = YES;
+                break;
+            }
+        }
+        
+        [self addLogString:[NSString stringWithFormat:NSLocalizedString(@"新增流:%@", nil), stream.streamID]];
+        self.tipsLabel.text = [NSString stringWithFormat:NSLocalizedString(@"用户%@进入，开始拉流", nil), stream.userID];
+        if (alreadyHave == NO) {
+            [self.streamList addObject:stream];
+        }
+    } else { // 删除流
+        
+        for (ZegoAudioStream *playStream in self.streamList) {
+            
+            if ([playStream.streamID isEqualToString:stream.streamID]) {
+                
+                [self addLogString:[NSString stringWithFormat:NSLocalizedString(@"删除流:%@", nil), stream.streamID]];
+                
+                self.tipsLabel.text = [NSString stringWithFormat:NSLocalizedString(@"用户%@退出，停止拉流", nil), stream.userID];
+                
+                [self.streamList removeObject:playStream];
+                break;
+            }
+        }
+    }
+    [self.tableView reloadData];
+}
+
+#pragma mark 房间成员更新回调
+- (void)onUserUpdate:(NSArray<ZegoUserState *> *)userList updateType:(ZegoUserUpdateType)type {
+    
+    if (type == ZEGO_UPDATE_TOTAL) { // 全部更新
+        [self addLogString:NSLocalizedString(@"用户列表已全量更新", nil)];
+    } else if (type == ZEGO_UPDATE_INCREASE) {
+        [self addLogString:NSLocalizedString(@"用户列表增量更新", nil)];
+    }
+    
+    for (ZegoUserState *user in userList) {
+        
+        if (user.updateFlag == ZEGO_USER_ADD) { // 新增
+            [self addLogString:[NSString stringWithFormat:NSLocalizedString(@"%@ 用户进入房间", nil), user.userID]];
+        } else if (user.updateFlag == ZEGO_USER_DELETE) { // 删除
+            [self addLogString:[NSString stringWithFormat:NSLocalizedString(@"用户离开房间", user.userID)]];
+        }
+    }
+}
+
+#pragma mark 收到房间的广播消息
+- (void)onRecvAudioRoomMessage:(NSString *)roomId messageList:(NSArray<ZegoRoomMessage *> *)messageList {
+    
+    for (ZegoRoomMessage *message in messageList) {
+        [self addLogString:[NSString stringWithFormat:@"%@ said: %@", message.fromUserId, message.content]];
+    }
+}
 
 @end
